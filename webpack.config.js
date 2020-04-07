@@ -8,11 +8,11 @@ const path = require('path')
  * 方式也是灵活多样，支持json格式，也支持函数传参，或者多配置数组，包括异步Promise支持
  * @type {{mode: string, output: {path: string, filename: string}, entry: string}}
  */
-modules.export = {
+module.exports = {
   "mode": "development",
-  "entry": "./foo.js",
+  "entry": "./src/index.js",
   "output": {
     "path": path.resolve(__dirname, "dist"),
-    "filename": "foo.bundle.js"
+    "filename": "index.bundle.js"
   }
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./src/es/index.js",
+    "dev": "webpack --mode development ./src/index.js",
     "build": "webpack --mode production ./src/es/index.js --module-bind js=babel-loader"
   },
   "repository": {

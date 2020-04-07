@@ -1,4 +1,6 @@
-const hello = require('./hello')
-const world = require('./world')
-
-console.log(`${hello} ${world}`)
+require.ensure(['./hello.js', './weak.js'], require => {
+  /* ... */
+});
+require.ensure(['./hello.js', './lazy.js'], require => {
+  /* ... */
+});
