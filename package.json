@@ -1,0 +1,29 @@
+{
+  "name": "webpack-track",
+  "version": "1.0.0",
+  "description": "慕课webpack工程化实践",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development ./src/es/index.js",
+    "build": "webpack --mode production ./src/es/index.js --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZHAISHENKING/webpack-track.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZHAISHENKING/webpack-track/issues"
+  },
+  "homepage": "https://github.com/ZHAISHENKING/webpack-track#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
